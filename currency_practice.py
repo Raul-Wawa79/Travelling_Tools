@@ -14,5 +14,5 @@ def get_currency(in_currency, out_currency):
 
 
 current_rate = get_currency('PLN', 'EUR')
-print("The current rate is " + current_rate + " so you better start saving money")
+print("The current rate is " + str(current_rate))
 
