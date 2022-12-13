@@ -3,5 +3,6 @@
 Ideas:
 - Currency exchange rate
 - weather app based on season and location
+- news app based on location
 
 """
