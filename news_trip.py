@@ -4,3 +4,16 @@
 #https://www.democracynow.org/?gclid=Cj0KCQiA4uCcBhDdARIsAH5jyUkeOXjrwoZvJhy_SscsKb01XsLiLrkGBVLGm_Me1lfa6WF69PxxlpIaAsJdEALw_wcB
 #https://www.bbc.com/news/world
 
+import requests
+
+def get_news(country, api_key= '121657808dcb407380857fd35291e006'):
+    url = f'https://newsapi.org/v2/top-headlines?country={country}&apiKey={api_key}'
+    r = requests.get(url)
+    content = r.json()
+    articles = content['articles']
+    results = []
+    for article in articles:
+        results.append(f"\nTITLE\n'{article['title']}, '\nDESCRIPTION\n', {article['description']}")
+    return results
+
+print(get_news(country='gb'))
