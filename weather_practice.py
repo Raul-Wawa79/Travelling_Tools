@@ -9,5 +9,5 @@ def get_weather(city, units= 'metric', api_key= '822a0e14a3c380f8c63ef19eec3fb7c
 
 
    #return content
-print(get_weather(city= 'pokhara'))
+print(get_weather(city= 'zorraquin'))
 
